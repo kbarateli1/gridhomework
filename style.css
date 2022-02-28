@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.bigdiv {
+  background-color: rgb(36, 36, 173);
+  height: 100%;
+  padding: 50px 20px;
+}
+
+.topside {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.topside h2 {
+  font-size: medium;
+  color: white;
+}
+
+.topside img {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    align-items: flex-end;
+}
+ 
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  grid-template-areas:
+    "Masonry1 responsive overlap overlap"
+    "Masonry1 fluid Explicity-placed negative-space"
+    "flexible-breadt Masonry-II Explicity-placed Masonry-III"
+    "dom-order Masonry-II Named-tracks Named-tracks";
+}
+
+.grid-item {
+  color: blue;
+  background-color: white;
+  margin: 10px;
+  text-align: center;
+  padding: 50px;
+}
+
+.item1 {
+  grid-area: Masonry1;
+}
+
+.item2 {
+  grid-area: responsive;
+}
+
+.item3 {
+  grid-area: overlap;
+}
+
+.item4 {
+  grid-area: overlap;
+}
+
+.item5 {
+  grid-area: Masonry1;
+}
+
+.item6 {
+  grid-area: fluid;
+}
+
+.item7 {
+  grid-area: Explicity-placed;
+}
+
+.item8 {
+  grid-area: negative-space;
+}
+
+.item9 {
+  grid-area: flexible-breadt;
+}
+
+.item10 {
+  grid-area: Masonry-II;
+}
+
+.item11 {
+  grid-area: Explicity-placed;
+}
+
+.item12 {
+  grid-area: Masonry-III;
+}
+
+.item13 {
+  grid-area: dom-order;
+}
+
+.item14 {
+  grid-area: Masonry-II;
+}
+
+.item15 {
+  grid-area: Named-tracks;
+}
+
+.item16 {
+  grid-area: Named-tracks;
+}
